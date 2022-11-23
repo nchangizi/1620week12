@@ -29,3 +29,13 @@ function changeText()
     }
 }
 clickMeButton.addEventListener("click", changeText);
+
+function updateImage()
+{
+    const image = document.querySelector("#shoppingCart");
+    // console.log(image);
+    image.src = "images/263142.png";
+    image.width=100;
+    image.height=100;
+}
+clickMeButton.addEventListener("click", updateImage);
