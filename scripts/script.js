@@ -16,3 +16,16 @@ function changeBGPink()
     document.body.classList.add("pink-bg");
 }
 clickMeButton.addEventListener("click", changeBGPink);
+
+function changeText()
+{
+    if( clickMeButton.textContent === 'Click Me!' )
+    {
+        clickMeButton.textContent = "clicked";
+    }
+    else if (clickMeButton.textContent === "clicked")
+    {
+        clickMeButton.textContent = "Click Me!";
+    }
+}
+clickMeButton.addEventListener("click", changeText);
