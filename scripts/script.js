@@ -41,8 +41,15 @@ const buttonContainer = document.querySelector(".button-container");
 
 function changeBGGreen(e) {
   if (e.target.tagName === "BUTTON") {
-    // e.target.style.backgroundColor = "green";
-    e.target.classList.add("greenBG");
+    e.target.style.backgroundColor = "green";
+    // e.target.classList.add("greenBG");
   }
 }
 buttonContainer.addEventListener("mouseover", changeBGGreen);
+
+function changeTextColor(e) {
+    // console.log(e.target.textContent)
+  e.target.style.color = e.target.textContent;
+//   e.target.classList.add(e.target.textContent);
+}
+buttonContainer.addEventListener("click", changeTextColor);
